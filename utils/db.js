@@ -8,16 +8,13 @@
 * https://codeburst.io/node-js-mysql-and-promises-4c3be599909b
 */
 
-
-
-
 const mysql = require('mysql');
 
 class Db {
 	constructor(config) {
 		this.connection = mysql.createPool({
 			connectionLimit: 100,
-			host: 'localhost',
+			host: 'mysqlserverazure.mysql.database.azure.com',
 			user: 'sqlroot',
 			password: 'myroot.1234',
 			database: 'chat',

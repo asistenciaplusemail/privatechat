@@ -17,7 +17,7 @@ const config = require('./utils/config');
 class Server{
 
     constructor(){
-        this.port =  process.env.PORT || 12345;
+        this.port =  process.env.PORT || 1234;
         this.host = `localhost`;
         
         this.app = express();
